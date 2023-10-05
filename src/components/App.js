@@ -20,11 +20,12 @@ const dispatch = useDispatch();
   }
   return (
     <div>
+      <h1>User Information</h1>
        <div>Name : <input type="text" onChange={handleName}/></div>
        <div>Email : <input type="email" onChange={handleEmail}/></div>
        <div>Current values in store : </div>
-       <div>Name : {myState.name}</div>
-       <div>Email : {myState.email}</div>
+       <div className="output">Name - {myState.name}</div>
+       <div className="output">Email - {myState.email}</div>
     </div>
   )
 }
